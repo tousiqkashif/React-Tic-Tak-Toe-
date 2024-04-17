@@ -7,7 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body{
+  background: url(../public/bg-pattern-dark.png);
+ 
+  background-color: rgb(20, 107, 0);
+
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+img{
+  width: 150px;
+  height: 150px;
+ 
+}
+h1{
+  text-align: center;
+  color: white;
+text-align: center;
+}
+

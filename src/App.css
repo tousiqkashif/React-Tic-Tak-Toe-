@@ -13,6 +13,9 @@
   }
 }
 
+*{
+  transition: 1s all;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +30,9 @@
 .App-link {
   color: #61dafb;
 }
+*{
+  list-style-type: none;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +41,153 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main{
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+#Game-compoent{
+  width: 40%;
+  background-color: rgba(3, 23, 3, 0.8);
+  border-radius: 10px;
+box-shadow: 1px 1px 5px rgb(80, 76, 76);
+  
+  padding: 20px;
+}
+
+#players li{
+
+ color: wheat;
+ float: left;
+padding: 10px 50px;
+
+}
+#players li button{
+  background: lightgreen;
+   border: none;
+  color: green;
+  font-size: 14px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px lightgreen;
+  color: black;
+}
+#players li button:hover{
+  border: 1px solid wheat;
+  border-radius: 5px;
+}
+#players li input{
+  background: none;
+  border: 1px solid wheat;
+  color: wheat;
+  font-size: 12px;
+  
+}
+
+/* .players{
+  border: 1px solid green;
+} */
+.Active{
+  border-radius: 5px;
+  border: 1px solid #0E2804;
+  /* box-shadow: 1px 1px 1px lightgreen; */
+  /* transition:  ; */
+  animation: actplay 1s infinite;
+}
+@keyframes actplay {
+  10% {border-left: 1px solid lightgreen;}
+  30% {border-top: 1px solid lightgreen;}
+  80% {border-right: 1px solid lightgreen;}
+  100% {border-bottom: 1px solid lightgreen;}
+}
+.players li:active{
+  border: 1px solid green;
+}
+span{
+  padding: 0 10px;
+}
+input{
+  width: 80px;
+  padding: 5px;
+}
+ol{
+  margin-left: 35px;
+  
+}
+li{
+  float: left;
+  
+}
+#sym-btn{
+  width: 60px;
+  height: 60px;
+  padding: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+font-size: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+color: lightgreen;
+border: none;
+
+animation: btnani 1s infinite;
+transition: 2s;
+background-color: rgba(0, 128, 0, 0.2);
+}
+
+@keyframes btnani {
+  from {  box-shadow: 0 0 5px lightgreen;}
+  to { border-radius: 5px;}
+}
+
+#gameover{
+  color: lightgreen;
+  height: 516px;
+  width: 620px;
+  top: 25.5%;
+  left: 30%;
+ border-radius: 10px;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(3, 23, 3, 0.8);
+  text-align: center;
+  line-height: 2;
+  transition: 2s;
+  display: block;
+  
+}
+#gameover .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+#gameover .row h2{
+  font-size: 50px;
+}
+#gameover .row p{
+  font-size: 20px;
+}
+#gameover .row button{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px lightgreen;
+  font-weight: bold;
+}
+.control{
+  display: none;
 }
